@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooms — Novara Resort</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header>
+  <div class="nav-container">
+    <a href="home.html" class="nav-logo">Novara<span>.</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="nav-login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ══ PAGE HERO ══ -->
+<section class="page-hero">
+  <h1>Our Rooms &amp; Suites</h1>
+  <p>Three curated accommodation types — each a world of comfort, crafted for your ultimate rest.</p>
+</section>
+
+<!-- ══ ROOMS ══ -->
+<section class="section">
+  <div class="section-inner">
+    <div class="rooms-grid">
+
+      <!-- Room 1 -->
+      <div class="room-card">
+        <img
+          src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80"
+          alt="Deluxe Garden Room"
+        />
+        <div class="room-body">
+          <span class="badge">Most Popular</span>
+          <h3>Deluxe Garden Room</h3>
+          <p>
+            Awaken to the fragrance of tropical blooms from your private terrace. The Deluxe Garden Room 
+            features a plush king bed, hand-crafted teak furniture, and a marble en-suite with a rain 
+            shower. Natural light floods the 38 m² space throughout the day.
+          </p>
+          <div class="room-amenities">
+            <span class="amenity-tag">👑 King Bed</span>
+            <span class="amenity-tag">🛁 Rain Shower</span>
+            <span class="amenity-tag">📺 Smart TV</span>
+            <span class="amenity-tag">☕ Mini Bar</span>
+            <span class="amenity-tag">🌿 Garden View</span>
+            <span class="amenity-tag">📶 Free Wi-Fi</span>
+          </div>
+          <div class="room-footer">
+            <div class="price">$180 <span>/ night</span></div>
+            <button class="btn btn-primary" onclick="handleBookNow()" style="padding:10px 22px;font-size:.85rem;">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Room 2 -->
+      <div class="room-card">
+        <img
+          src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80"
+          alt="Premium Ocean Suite"
+        />
+        <div class="room-body">
+          <span class="badge" style="background:var(--ice);color:var(--teal);">Premium</span>
+          <h3>Premium Ocean Suite</h3>
+          <p>
+            Our finest lake-view suite stretches 62 m² with floor-to-ceiling glass that frames 
+            the Annapurna peaks at dawn. Includes a deep soaking tub, separate living area, 
+            in-room espresso machine, and dedicated butler service for the duration of your stay.
+          </p>
+          <div class="room-amenities">
+            <span class="amenity-tag">🛏️ Super King Bed</span>
+            <span class="amenity-tag">🛁 Soaking Tub</span>
+            <span class="amenity-tag">🧑‍🍳 Butler Service</span>
+            <span class="amenity-tag">☕ Espresso Machine</span>
+            <span class="amenity-tag">🌅 Lake &amp; Mountain View</span>
+            <span class="amenity-tag">🍷 Welcome Amenities</span>
+          </div>
+          <div class="room-footer">
+            <div class="price">$320 <span>/ night</span></div>
+            <button class="btn btn-primary" onclick="handleBookNow()" style="padding:10px 22px;font-size:.85rem;">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Room 3 -->
+      <div class="room-card">
+        <img
+          src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80"
+          alt="Presidential Villa"
+        />
+        <div class="room-body">
+          <span class="badge" style="background:#FFF0D4;color:#A0600A;">Presidential</span>
+          <h3>Presidential Villa</h3>
+          <p>
+            The ultimate Novara experience. This 160 m² stand-alone villa includes two bedrooms, 
+            a private heated pool, outdoor dining pavilion, personal chef, 24-hour concierge, 
+            and a complimentary spa credit. The epitome of privacy and indulgence.
+          </p>
+          <div class="room-amenities">
+            <span class="amenity-tag">🏠 Private Villa</span>
+            <span class="amenity-tag">🏊 Private Pool</span>
+            <span class="amenity-tag">👨‍🍳 Personal Chef</span>
+            <span class="amenity-tag">🎯 24/7 Concierge</span>
+            <span class="amenity-tag">💆 Spa Credit</span>
+            <span class="amenity-tag">🚗 Airport Transfer</span>
+          </div>
+          <div class="room-footer">
+            <div class="price">$650 <span>/ night</span></div>
+            <button class="btn btn-green" onclick="handleBookNow()" style="padding:10px 22px;font-size:.85rem;">Reserve</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Info note -->
+    <div style="background:var(--ice);border-radius:var(--radius);padding:28px 32px;margin-top:48px;display:flex;gap:16px;align-items:flex-start;">
+      <div style="font-size:1.5rem;flex-shrink:0;">ℹ️</div>
+      <div>
+        <h4 style="color:var(--teal);margin-bottom:6px;">What's Included in Every Room</h4>
+        <p style="font-size:.9rem;color:#4A6A78;line-height:1.7;">
+          All rooms include complimentary breakfast for two, high-speed Wi-Fi, in-room safe, premium 
+          toiletries, daily housekeeping, access to the resort pool and fitness centre, and our 24/7 
+          concierge service. Prices are per night, taxes included.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section style="background:var(--mint);padding:64px 24px;text-align:center;">
+  <h2 style="font-size:2rem;color:var(--green);margin-bottom:12px;">Not Sure Which Room to Choose?</h2>
+  <p style="color:#3A7A5A;max-width:480px;margin:0 auto 28px;">
+    Our concierge team is happy to help you find the perfect fit for your stay and occasion.
+  </p>
+  <a href="contact.html" class="btn btn-green">Talk to Concierge</a>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Novara Resort</h3>
+      <p>A sanctuary of luxury and serenity, offering unforgettable experiences in breathtaking surroundings.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+9771234567">📞 +977 1 234 567</a></li>
+        <li><a href="mailto:hello@novararesort.com">✉️ hello@novararesort.com</a></li>
+        <li><a href="#">📍 Pokhara, Nepal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Novara Resort &amp; Spa. All rights reserved.</p>
+  </div>
+</footer>
+
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
